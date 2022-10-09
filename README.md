@@ -10,8 +10,8 @@ We use the following methods for the analysis:
 - optimize the model to imporve prediction accuracy.
 
 ## Resources
-Datasets [Charity Data](https://github.com/ShiraliObul/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv)
-Tools: Python, Pandas, Numpy, Scikit, TensorFlow, Jupyter lab
+- Datasets [Charity Data](https://github.com/ShiraliObul/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv)
+- Tools: Python, Pandas, Numpy, Scikit, TensorFlow, Jupyter lab
 
 ## Results 
 ### Processing the dataset in order to compile, train, and evaluate the neural network model
