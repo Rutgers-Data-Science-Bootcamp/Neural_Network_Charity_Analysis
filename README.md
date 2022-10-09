@@ -28,3 +28,34 @@ There are a number of columns that capture metadata about each organization, suc
 - ASK_AMT—Funding amount requested
 - IS_SUCCESSFUL—Was the money used effectively
 
+Processing steps:
+- Drop the columns EIN and NAME  that are identification information which have no value in modeling.
+- The column IS_SUCCESSFUL is the target feature for our deep learning neural network as it contains binary data refering to weither or not the charity donation was used effectively.
+- These columns APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT are the features for our model.
+- Encoding of the categorical variables, spliting into training and testing datasets and standardization have been applied to the features.
+
+Original dataset were 12 columns and 34299 rows:
+![Screen Shot 2022-10-09 at 6 33 37 PM](https://user-images.githubusercontent.com/65901034/194782524-1e631a8b-025e-456b-ae24-bc7a5d71d7a7.png)
+
+After processing for Neural network model, there is 44 columns and 34299 rows: 
+![Screen Shot 2022-10-09 at 6 40 56 PM](https://user-images.githubusercontent.com/65901034/194782831-82ef8e9f-b08c-46cc-b5da-8a75abaf2794.png)
+## Compiling, Training, and Evaluating the Model 
+- As we processed the data, the input data has 43 features and 34299 samples.
+- We did random split the data with train dataset and test dataset, then scale the data to make them ready for model application.
+- We set a deep-learning neural network model with two hidden layers with 8 and 5 neurons respectively.
+- We set a output layer with a unique neuron as it is a binary classification.
+- To speed up the training process, we are using the activation function ReLU for the hidden layers. As our output is a binary classification, Sigmoid is used on the output layer.
+- For the compilation, the optimizer is adam and the loss function is binary_crossentropy.
+Here is the model summary:
+
+![Screen Shot 2022-10-09 at 6 48 37 PM](https://user-images.githubusercontent.com/65901034/194783073-41728c19-d568-4ab6-8d27-041efbc2690d.png)
+
+- As you see in the screenshot, with both train and test data, we reached the accuracy about 73%. This is not a satisfying performance to help predict the outcome of the charity donations as try to reach more than 75%
+- 
+![Screen Shot 2022-10-09 at 6 47 52 PM](https://user-images.githubusercontent.com/65901034/194783055-63d96f7d-94cb-4264-9220-07dc71adc179.png)
+
+To increase the performance of the model, we applied bucketing to the feature ASK_AMT and organized the different values by intervals.
+We increased the number of neurons on one of the hidden layers, then we used a model with three hidden layers.
+We also tried a different activation function (tanh) but none of these steps helped improve the model's performance.
+
+
