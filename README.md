@@ -63,6 +63,9 @@ To increase the performance of the model, we applied follwoing steps:
 
 The optimization results can be seen here: [results](https://github.com/ShiraliObul/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimzation.ipynb)
 
+### Save the model 
+we used the Keras Sequential model's save method to export the entire model (weights, structure, and configuration settings) to an Hierarchical Data Format file. The model can be downloaded here [Model saved file](https://github.com/ShiraliObul/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.h5). With the H5 file, one can import the exact same trained model to their environment by using the Keras load_model method and use it for analysis.
+
 ## Summary 
 Even with the 3 different optimization attempts, our deep learning neural network model did not reach 75% accuracy with longer time consuming to process. Then we tried supervised logistic regression machine learning model, Random Forest Classifier to combine a multitude of decision trees to generate a classified output and evaluate its performance against our deep learning model. As you can see in the screenshot below, the result was instantaneous as compared to deep learning model, moreover, the accuracy was about 73%. 
 
