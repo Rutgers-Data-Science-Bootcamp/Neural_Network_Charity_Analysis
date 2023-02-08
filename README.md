@@ -55,6 +55,8 @@ Here is the model summary:
 
 ![Screen Shot 2022-10-09 at 6 47 52 PM](https://user-images.githubusercontent.com/65901034/194783055-63d96f7d-94cb-4264-9220-07dc71adc179.png)
 
+**[`^        back to top        ^`](#Overview-of-the-Project)**
+
 ### Optimization of model performance
 To increase the performance of the model, we applied follwoing steps:
 - 1. bucketing to the feature ASK_AMT and organized the different values by intervals.
