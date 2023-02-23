@@ -63,6 +63,9 @@ To increase the performance of the model, we applied follwoing steps:
 - 2. use different activation function (tanh) but none of these steps helped improve the model's performance.
 - 3. Bin NAME column and added into features.
 
+![Screenshot 2023-02-23 at 7 47 52 AM](https://user-images.githubusercontent.com/65901034/220910748-8abe7c19-d20b-48ae-9aa3-d9ed59a7d593.png)
+
+
 The optimization results can be seen here: [results](https://github.com/ShiraliObul/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimzation.ipynb)
 
 ### Save the model 
