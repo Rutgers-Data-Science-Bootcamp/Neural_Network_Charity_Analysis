@@ -59,9 +59,9 @@ Here is the model summary:
 
 ### Optimization of model performance
 To increase the performance of the model, we applied follwoing steps:
-- 1. bucketing to the feature ASK_AMT and organized the different values by intervals.
-- 2. increased the number of neurons on one of the hidden layers, then we used a model with three hidden layers.
-- 3. use different activation function (tanh) but none of these steps helped improve the model's performance.
+- 1. increased the number of neurons on one of the hidden layers, then we used a model with three hidden layers.
+- 2. use different activation function (tanh) but none of these steps helped improve the model's performance.
+- 3. Bin NAME column and added into features.
 
 The optimization results can be seen here: [results](https://github.com/ShiraliObul/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimzation.ipynb)
 
